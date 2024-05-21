@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/biblioteca.css">
+    
+    <title>lithub</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <button onclick="location.href='index.html'" id="home"><i class='bx bx-home'></i> Home</button>
+          <span>Cadastro de Livros</span>
+          <button onclick="openModal()" id="new"><i class='bx bx-add-to-queue'></i> Incluir</button>
+        </div>
+    
+        <div class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome do livro</th>
+                <th>Autor</th>
+                <th>Ano da publicação</th>
+                <th class="acao">Editar</th>
+                <th class="acao">Excluir</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="modal-container">
+          <div class="modal">
+            <form>
+              <label for="m-nome">Nome do livro</label>
+              <input id="m-nome" type="text" required />
+      
+              <label for="m-autor">Autor</label>
+              <input id="m-autor" type="text" required />
+      
+              <label for="m-ano">Ano da publicação</label>
+              <input id="m-ano" type="number" required />
+              <button id="btnSalvar">Salvar</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="scripts/biblioteca.js"></script>
+</body>
+</html>
