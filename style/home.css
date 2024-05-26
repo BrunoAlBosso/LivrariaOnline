@@ -32,16 +32,6 @@ body {
     position: fixed;
 }
 
-.navigation .logo {
-    color: var(--orange);
-    font-size: 1.7rem;
-    font-weight: 600;
-}
-
-.logo span {
-    color: var(--dark);
-}
-
 .navigation ul {
     display: flex;
     align-items: center;

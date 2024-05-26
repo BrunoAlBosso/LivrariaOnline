@@ -11,6 +11,8 @@
 - Html
 - css
 - javascript
+- node js
+- json server
 
 ## 🤝 Integrantes do Grupo
 
