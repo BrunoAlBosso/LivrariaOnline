@@ -95,6 +95,198 @@ Rodando o servidor
 
 ```bash
 
+Listagem de caminhos de pasta para o volume Acer
+O número de série do volume é 5405-C99E
+C:.
+├───.vscode
+├───db
+├───imagens
+├───javascript
+├───node_modules
+│   ├───.bin
+│   ├───@mongodb-js
+│   ├───@types
+│   ├───accepts
+│   ├───anymatch
+│   ├───array-flatten
+│   ├───balanced-match
+│   │   └───.github
+│   ├───binary-extensions
+│   ├───body-parser
+│   │   └───lib
+│   │       └───types
+│   ├───brace-expansion
+│   ├───braces
+│   │   └───lib
+│   ├───bytes
+│   ├───call-bind
+│   │   ├───.github
+│   │   └───test
+│   ├───chokidar
+│   │   ├───lib
+│   │   └───types
+│   ├───concat-map
+│   │   ├───example
+│   │   └───test
+│   ├───content-disposition
+│   ├───content-type
+│   ├───cookie
+│   ├───cookie-signature
+│   ├───cors
+│   │   └───lib
+│   ├───debug
+│   │   └───src
+│   ├───define-data-property
+│   │   ├───.github
+│   │   └───test
+│   ├───depd
+│   │   └───lib
+│   │       └───browser
+│   ├───destroy
+│   ├───ee-first
+│   ├───encodeurl
+│   ├───es-define-property
+│   │   ├───.github
+│   │   └───test
+│   ├───es-errors
+│   │   ├───.github
+│   │   └───test
+│   ├───escape-html
+│   ├───etag
+│   ├───express
+│   │   └───lib
+│   │       ├───middleware
+│   │       └───router
+│   ├───fill-range
+│   ├───finalhandler
+│   ├───forwarded
+│   ├───fresh
+│   ├───function-bind
+│   │   ├───.github
+│   │   └───test
+│   ├───get-intrinsic
+│   │   ├───.github
+│   │   └───test
+│   ├───glob-parent
+│   ├───gopd
+│   │   ├───.github
+│   │   └───test
+│   ├───has-flag
+│   ├───has-property-descriptors
+│   │   ├───.github
+│   │   └───test
+│   ├───has-proto
+│   │   ├───.github
+│   │   └───test
+│   ├───has-symbols
+│   │   ├───.github
+│   │   └───test
+│   │       └───shams
+│   ├───hasown
+│   │   └───.github
+│   ├───http-errors
+│   ├───iconv-lite
+│   │   ├───encodings
+│   │   │   └───tables
+│   │   └───lib
+│   ├───ignore-by-default
+│   ├───inherits
+│   ├───ipaddr.js
+│   │   └───lib
+│   ├───is-binary-path
+│   ├───is-extglob
+│   ├───is-glob
+│   ├───is-number
+│   ├───media-typer
+│   ├───merge-descriptors
+│   ├───methods
+│   ├───mime
+│   │   └───src
+│   ├───mime-db
+│   ├───mime-types
+│   ├───minimatch
+│   ├───ms
+│   ├───negotiator
+│   │   └───lib
+│   ├───nodemon
+│   │   ├───bin
+│   │   ├───doc
+│   │   │   └───cli
+│   │   ├───lib
+│   │   │   ├───cli
+│   │   │   ├───config
+│   │   │   ├───help
+│   │   │   ├───monitor
+│   │   │   ├───rules
+│   │   │   └───utils
+│   │   └───node_modules
+│   │       ├───debug
+│   │       │   └───src
+│   │       └───ms
+│   ├───normalize-path
+│   ├───object-assign
+│   ├───object-inspect
+│   │   ├───.github
+│   │   ├───example
+│   │   └───test
+│   │       └───browser
+│   ├───on-finished
+│   ├───parseurl
+│   ├───path-to-regexp
+│   ├───picomatch
+│   │   └───lib
+│   ├───proxy-addr
+│   ├───pstree.remy
+│   │   ├───lib
+│   │   └───tests
+│   │       └───fixtures
+│   ├───qs
+│   │   ├───.github
+│   │   ├───dist
+│   │   ├───lib
+│   │   └───test
+│   ├───range-parser
+│   ├───raw-body
+│   ├───readdirp
+│   ├───safe-buffer
+│   ├───safer-buffer
+│   ├───semver
+│   │   ├───bin
+│   │   ├───classes
+│   │   ├───functions
+│   │   ├───internal
+│   │   └───ranges
+│   ├───send
+│   │   └───node_modules
+│   │       └───ms
+│   ├───serve-static
+│   ├───set-function-length
+│   │   └───.github
+│   ├───setprototypeof
+│   │   └───test
+│   ├───side-channel
+│   │   ├───.github
+│   │   └───test
+│   ├───simple-update-notifier
+│   │   ├───build
+│   │   └───src
+│   ├───statuses
+│   ├───supports-color
+│   ├───to-regex-range
+│   ├───toidentifier
+│   ├───touch
+│   │   └───bin
+│   ├───type-is
+│   ├───undefsafe
+│   │   ├───.github
+│   │   │   └───workflows
+│   │   └───lib
+│   ├───unpipe
+│   ├───utils-merge
+│   └───vary
+└───style
+PS C:\Users\bruno\OneDrive\Documentos\Projeto Desenvolvimento Framework I\LivrariaOnline>
+
 ```
 
 ## ✅ Features
