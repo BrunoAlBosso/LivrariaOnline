@@ -12,17 +12,33 @@ const readFile = () => {
     return JSON.parse(content)
 }
 
+const readFileFeedback = () => {
+    const content = fs.readFileSync('./db/feedback.json', 'utf-8')
+    return JSON.parse(content)
+}
+
 const writeFile = (content) => {
     const updateFile = JSON.stringify(content)
     fs.writeFileSync('./db/items.json', updateFile, 'utf-8')
 }
 
-router.get('/', (req, res) => {
+const writeFileFeedback = (content) => {
+    const updateFile = JSON.stringify(content)
+    fs.writeFileSync('./db/feedback.json', updateFile, 'utf-8')
+}
+
+router.get('/biblioteca', (req, res) => {
     const content = readFile()
     res.send(content)
 })
 
-router.post('/', (req, res) => {
+router.get('/feedback', (req, res) => {
+    console.log("Feedback open");
+    const content = readFileFeedback()
+    res.send(content)
+})
+
+router.post('/biblioteca', (req, res) => {
     const { nome_livro, autor, ano } = req.body
     const currentContent = readFile()
 
@@ -32,7 +48,18 @@ router.post('/', (req, res) => {
     res.send( {id, nome_livro, autor, ano} )
 })
 
-router.put('/:id', (req, res) => {
+router.post('/feedback', (req, res) => {
+    const { feedback} = req.body
+    const currentContent = readFileFeedback()
+
+    const id = Math.random().toString(32).substr(2, 9)
+    console.log(id, feedback);
+    currentContent.push({ id, feedback})
+    writeFileFeedback(currentContent)
+    res.send( {id, feedback} )
+})
+
+router.put('/biblioteca/:id', (req, res) => {
     const { nome_livro, autor, ano } = req.body
     const {id} = req.params
     const currentContent = readFile()
@@ -53,12 +80,40 @@ router.put('/:id', (req, res) => {
     res.send(newObject)
 })
 
-router.delete('/:id', (req, res) => {
+router.put('/feedback/:id', (req, res) => {
+    const { feedback} = req.body
+    const {id} = req.params
+    const currentContent = readFileFeedback()
+    const selectedItem = currentContent.findIndex((item) => item.id == id)
+
+    const { id: cId, feedback: cFeedback } = currentContent[selectedItem]
+
+    const newObject = {
+        id: cId,
+        feedback: feedback ? feedback: cFeedback
+    }
+
+    currentContent[selectedItem] = newObject
+    writeFileFeedback(currentContent)
+
+    res.send(newObject)
+})
+
+router.delete('/biblioteca/:id', (req, res) => {
     const { id } = req.params
     const currentContent = readFile()
     const selectedItem = currentContent.findIndex((item) => item.id == id)
     currentContent.splice(selectedItem, 1)
     writeFile(currentContent)
+    res.send(true)
+})
+
+router.delete('/feedback/:id', (req, res) => {
+    const { id } = req.params
+    const currentContent = readFileFeedback()
+    const selectedItem = currentContent.findIndex((item) => item.id == id)
+    currentContent.splice(selectedItem, 1)
+    writeFileFeedback(currentContent)
     res.send(true)
 })
 
